@@ -94,10 +94,20 @@ $(document).ready(function () {
     }
   );*/
 
-  /* Mobile nav */
+  /* Mobile nav -- sis man isti nestrada jo mana ikonam nav class names*/
   $(".js--nav-icon").click(function () {
     var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon ion-icon");
 
     nav.slideToggle(200);
+    if (icon.hasClass('menu')) {
+        icon.addCass('close');
+        icon.removeClass('menu')
+
+    }  else {
+        icon.addClass('menu');
+        icon.removeClass('close')
+
+    
   });
 });
