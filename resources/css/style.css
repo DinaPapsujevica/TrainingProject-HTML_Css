@@ -594,19 +594,13 @@ footer p {
   margin-top: 20px;
 }
 
-/*------------------------------------- Animations  - man isti nesanaca iekustinat js so
+/*------------------------------------- Animations  - man isti nesanaca iekustinat js so*/
 .js--wp-1,
 .js--wp-2,
 .js--wp-3 {
-  opacity: 0; /*makes element invisible
+  opacity: 0; /*makes element invisible*/
   animation-duration: 1s;
 }
 .js--wp-4 {
   animation-duration: 1s;
 }
-/*
-.js--wp-1.animate__animated,
-.js--wp-2.animate__animated,
-.js--wp-3.animate__animated {
-  opacity: 1;
-}*/

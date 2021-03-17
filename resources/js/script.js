@@ -60,10 +60,10 @@ $(document).ready(function () {
       }
     });
 
-  /*Animation on scroll - nesanaca iekustinat so, jo nemaceju download animate.css
+  /*Animation on scroll - nesanaca iekustinat so, jo nemaceju download animate.css */
   $(".js--wp-1").waypoint(
     function (direction) {
-      $(".js-wp-1").addClass("animate__animated animate__fadeIn");
+      $(".js--wp-1").addClass("animate__animated animate__fadeIn");
     },
     {
       offset: "50%",
@@ -71,7 +71,7 @@ $(document).ready(function () {
   );
   $(".js--wp-2").waypoint(
     function (direction) {
-      $(".js-wp-1").addClass("animate__animated animate__fadeInUp");
+      $(".js--wp-2").addClass("animate__animated animate__fadeInUp");
     },
     {
       offset: "50%",
@@ -79,7 +79,7 @@ $(document).ready(function () {
   );
   $(".js--wp-3").waypoint(
     function (direction) {
-      $(".js-wp-1").addClass("animate__animated animate__fadeIn");
+      $(".js--wp-3").addClass("animate__animated animate__fadeIn");
     },
     {
       offset: "50%",
@@ -87,12 +87,12 @@ $(document).ready(function () {
   );
   $(".js--wp-4").waypoint(
     function (direction) {
-      $(".js-wp-1").addClass("animate__animated animate__pulse");
+      $(".js--wp-4").addClass("animate__animated animate__pulse");
     },
     {
       offset: "50%",
     }
-  );*/
+  );
 
   /* Mobile nav -- sis man isti nestrada jo mana ikonam nav class names*/
   $(".js--nav-icon").click(function () {
@@ -100,14 +100,12 @@ $(document).ready(function () {
     var icon = $(".js--nav-icon ion-icon");
 
     nav.slideToggle(200);
-    if (icon.hasClass('menu')) {
-        icon.addCass('close');
-        icon.removeClass('menu')
-
-    }  else {
-        icon.addClass('menu');
-        icon.removeClass('close')
-
-    
+    if (icon.hasClass("menu")) {
+      icon.addCass("close");
+      icon.removeClass("menu");
+    } else {
+      icon.addClass("menu");
+      icon.removeClass("close");
+    }
   });
 });
